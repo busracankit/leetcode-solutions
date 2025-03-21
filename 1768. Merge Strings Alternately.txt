@@ -1,0 +1,24 @@
+class Solution {
+public:
+    std::string mergeAlternately(std::string word1, std::string word2) {
+        int len1 = word1.length();
+        int len2 = word2.length();
+        int minLen = std::min(len1, len2);
+
+        std::string result;
+        result.reserve(len1 + len2); 
+
+        for (int i = 0; i < minLen; i++) {
+            result += word1[i];
+            result += word2[i];
+        }
+
+        if (len1 > len2) {
+            result += word1.substr(minLen);
+        } else {
+            result += word2.substr(minLen);
+        }
+
+        return result;
+    }
+};
