@@ -4,4 +4,4 @@ class Solution:
         return [candy + extraCandies >= max_candies for candy in candies]  # Liste oluştur
 
 solution = Solution()
-print(solution.kidsWithCandies([2, 3, 5, 1, 3], 3))  # Çıktı: [True, True, True, False, True]
+print(solution.kidsWithCandies([2, 3, 5, 1, 3], 3)) 
