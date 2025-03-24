@@ -1,0 +1,8 @@
+class Solution:
+    def kidsWithCandies(self, candies, extraCandies):
+        max_candies = max(candies)  # Mevcut en fazla şeker sayısını bul
+        return [candy + extraCandies >= max_candies for candy in candies]  # Liste oluştur
+
+# Örnek kullanım (LeetCode bunu otomatik test edecektir):
+solution = Solution()
+print(solution.kidsWithCandies([2, 3, 5, 1, 3], 3))  # Çıktı: [True, True, True, False, True]
