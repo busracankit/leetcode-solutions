@@ -16,6 +16,6 @@ class Solution:
 
 
 solution = Solution()
-print(solution.mergeAlternately("abc", "pqr"))  # "apbqcr"
-print(solution.mergeAlternately("ab", "pqrs"))  # "apbqrs"
-print(solution.mergeAlternately("abcd", "pq"))  # "apbqcd"
+print(solution.mergeAlternately("abc", "pqr"))  
+print(solution.mergeAlternately("ab", "pqrs")) 
+print(solution.mergeAlternately("abcd", "pq")) 
